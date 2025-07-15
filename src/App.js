@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import AddVehicle from './components/AddVehicle';
-import Delete from './components/Delete';
-import Search from './components/Search';
-import View from './components/View';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Add from './components/Add'
+import Searchh from './components/Searchh'
+import Deletee from './components/Deletee'
+import Vieww from './components/Vieww'
 
-function App() {
+const App = () => {
   return (
     <div>
-        <BrowserRouter>
-        <Routes >
-          <Route path="/Add" elemet={<AddVehicle />} />
-          <Route path="/Search" elemet={<Search />} />
-          <Route path="/Delete" elemet={<Delete />} />
-          <Route path="/View" elemet={<View />} />
-          </Routes></BrowserRouter>
- 
+      <BrowserRouter>
+      <Routes>
+        <Route path="/ADD" element={<Add />} />
+        <Route path="/Search" element={<Searchh />} />
+        <Route path="/Delete" element={<Deletee />} />
+        <Route path="/View" element={<Vieww />} />
+
+        </Routes>
+        </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
